@@ -20,7 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "modified":"PUBLIC_URL=http://ec2-13-232-84-9.ap-south-1.compute.amazonaws.com/json-to-form/build/ npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +40,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+	"homepage":"http://ec2-13-232-84-9.ap-south-1.compute.amazonaws.com/json-to-form/build/"
 }

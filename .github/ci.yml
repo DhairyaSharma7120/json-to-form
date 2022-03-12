@@ -1,0 +1,24 @@
+name: ci-cd
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: AKIA5WIKT4EBKZVU5HN7
+          aws-secret-access-key: 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
+          aws-region: ap-south-1  
+          
+      - name: Build React Apps
+        run:  npm install && npm run modified
+       
+        
+
