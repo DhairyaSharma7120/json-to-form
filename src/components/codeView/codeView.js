@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./codeView.css"
-function CodeView() {
+function CodeView({refresh}) {
+  const [codeView,setCodeView] = useState()
+    useEffect(()=>{
+      let form = document.getElementById("form")
+      console.log(form)
+      setCodeView(String(form))
+    },[refresh])
+    
   return (
-    <div>codeView</div>
+    <pre className='prettyprint'>{codeView}</pre>
   )
 }
 

@@ -52,6 +52,23 @@
   box-sizing: border-box;
 
 }
+.viewControl{
+  cursor: pointer;
+}
+.outputView{
+  width: 100%;
+  height:100%;
+}
+.d-none{
+  display: none;
+}
+.d-flex{
+  display: flex;
+}
+.outputContainer{
+  width: 100%;
+  height: 100%;
+}
 
 @keyframes App-logo-spin {
   from {
