@@ -7,7 +7,7 @@ function JsonContainer({setJsonData}) {
         <p>Paste JSON here</p>
       </div>
       <textarea contentEditable={true} onChange={(e)=>setJsonData(e.target.value)} className="jsonCode">
-        /paste json Here
+       
       </textarea>
     </div>
   );

@@ -37,9 +37,10 @@ function App() {
         </Resizable>
 
         <div className="view rightView">
-          <div className="viewControl">
+          <div className="viewControl codeIcon">
             {!showCode && <CodeIcon onClick={() => setShowCode(true)} />}
             {showCode && <CodeOffIcon onClick={() => setShowCode(false)} />}
+            code
           </div>
           <div className="outputView">
             <div className={`outputContainer ${!showCode ? "d-flex" : "d-none"}`}>
